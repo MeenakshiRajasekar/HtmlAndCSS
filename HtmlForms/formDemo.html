@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="signup.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="usernameid">User Name</label>
+            <input type="text" name="UserName" id="usernameid" placeholder="Userid" maxlength="25" required>
+            <!-- label for is useed to the username input with its id  -->
+        </div>
+        <div>
+            <label for="passwordid">Password</label>
+            <input type="password" name="Password" id="passwordid" placeholder="Password" required minlength="8">
+            <!-- for db updation we are giving input name  -->
+        </div>
+        <div>
+            <label for="DOBID">DOB</label>
+            <input type="date" name="DOB" id="DOBID" placeholder="dob" min="1990-01-01" max="2005-31-12" step="10"
+                required>
+        </div>
+        <div>
+            <label for="emailId">Email</label>
+            <input type="email" name="email" id="emailId" placeholder="Email" required>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="state"></label>
+            <select name="state" id="state">
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="fileId">Resume</label>
+            <input type="file" name="file" id="fileId">
+        </div>
+        <div>
+            <label for="aboutID"></label>
+            <textarea name="Comments here" id="aboutID" cols="20" placeholder="About"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="smsAlert" id="smsAlertId">
+            <label for="smsAlertId">Sms Alert</label>
+        </div>
+        <div>
+            <input type="checkbox" name="mailAlert" id="mailAlertId">
+            <label for="mailAlertId">Mail Alert</label>
+        </div>
+        <div>
+            <input type="checkbox" name="T&A" id="T&Aid">
+            <label for="T&Aid">Agree Terms and Conditions</label>
+        </div>
+        <button type="submit"> Sign in</button>
+        <!-- <input type="image" src="/submit.jpg" > -->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
