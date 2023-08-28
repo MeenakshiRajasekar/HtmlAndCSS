@@ -1,0 +1,162 @@
+:root{
+    --red: rgb(217, 8, 50);
+    --yellow: #f5cf83;
+    --green: rgb(173, 237, 173);
+    --white: rgb(150, 144, 144);
+}
+body, h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../media/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    color: var(--white)
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 120px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+}
+header a:hover{
+    color: var(--green);
+}
+.maintext{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    height: 50vh;
+    justify-content: left;
+}
+
+.tagline1{
+    color: var(--red);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.tagline2{
+    margin-top: 2px;
+    color: var(--yellow);
+    font-weight: bold;
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 10px;
+    width:20vw;
+    padding: .7em;
+    border: 1px solid;
+    margin-top: 2px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    color: var(--white);
+}
+.Locations{
+    display: flex;
+    background: linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    color: var(--white);
+}
+#MainMenu,#locheading{
+    display: flex;
+    color: var(--red);
+    background: linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    justify-content: center;
+    font-size: 2em;
+}
+.menu th{
+    color: var(--green);
+    justify-content: center;
+    font-size: 1em;
+}
+table{
+    width: 100;
+    padding: 1em;
+}
+.menu tr{
+    padding: 0.8em;
+    justify-content: center;
+    display: fle;
+}
+.menu td:nth-child(1){
+    justify-content: left;
+    flex:1;
+}
+.menu td:nth-child(2){
+    justify-content: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+
+.Locations h2{
+    color: var(--green);
+    font-size: 1em;
+    margin-bottom: 0.8em;
+}
+.Locations div{
+    flex: 1;
+    min-width: 220px;
+    padding: 0.25em;
+}
+footer{
+    background-color: rgb(55, 55, 55);
+    color: var(--white);
+    padding: .25em,1em;
+}
+#copyright{
+    margin-left: 20px;
+}
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
